@@ -49,10 +49,34 @@ export default function Home() {
 
   return (
     <div className="container mx-auto p-6">
-      <div className="text-2xl font-bold my-10">
-        This is a simple application that uses DynamoDB to store data. The API
-        allows FETCH, POST, and DELETE. Runs using Serverless.
-      </div>
+      <section className="max-w-3xl mx-auto my-12 p-6 rounded-lg shadow-md bg-gray-100 dark:bg-gray-700">
+        <h2 className="text-2xl font-bold text-center text-gray-900 dark:text-white mb-4">
+          🚀 How This Job Board Works
+        </h2>
+
+        <ul className="space-y-3 text-gray-800 dark:text-gray-200 pl-5 list-disc">
+          <li>
+            <strong>Frontend:</strong> Next.js React app that fetches job
+            listings from an AWS-hosted API.
+          </li>
+          <li>
+            <strong>Backend API:</strong> Serverless Node.js (AWS Lambda +
+            Express), handles creation, fetching, and deletion of jobs.
+          </li>
+          <li>
+            <strong>Data Storage:</strong> DynamoDB (AWS NoSQL) that stores
+            posted jobs securely and quickly.
+          </li>
+          <li>
+            <strong>File Storage:</strong> Uses Amazon S3 storage for any future
+            file uploads (e.g., company logos).
+          </li>
+          <li>
+            <strong>Infrastructure Automation:</strong> Terraform manages AWS
+            resources consistently.
+          </li>
+        </ul>
+      </section>
       <h1 className="text-3xl font-bold mb-4 text-center text-gray-800 dark:text-white">
         🏢 Job Listings
       </h1>
