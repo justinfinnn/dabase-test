@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 import JobForm from "@/app/components/JobForm";
 
