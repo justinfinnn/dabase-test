@@ -49,6 +49,10 @@ export default function Home() {
 
   return (
     <div className="container mx-auto p-6">
+      <div className="text-2xl font-bold my-10">
+        This is a simple application that uses DynamoDB to store data. The API
+        allows FETCH, POST, and DELETE. Runs using Serverless.
+      </div>
       <h1 className="text-3xl font-bold mb-4 text-center text-gray-800 dark:text-white">
         🏢 Job Listings
       </h1>
